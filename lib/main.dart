@@ -37,7 +37,7 @@ class MyApp extends StatelessWidget {
           ),
           useMaterial3: true,
           colorScheme: ColorScheme.fromSeed(
-            seedColor: Colors.teal,
+            seedColor: Colors.blue,
           ),
         ),
         home: MyHomePage(),
@@ -173,7 +173,7 @@ class _MyHomePageState extends State<MyHomePage> {
                       });
                     },
                   ),
-                       ListTile(
+                  ListTile(
                     leading: Icon(Icons.list_alt_sharp),
                     title: Text('Custom Scroll View'),
                     onTap: () {
@@ -183,7 +183,7 @@ class _MyHomePageState extends State<MyHomePage> {
                     },
                   ),
                   Divider(),
-                     ListTile(
+                  ListTile(
                     leading: Icon(Icons.list_alt_sharp),
                     title: Text('List Horizontal'),
                     onTap: () {
@@ -201,9 +201,6 @@ class _MyHomePageState extends State<MyHomePage> {
                       });
                     },
                   ),
-               
-             
-                  
                   ListTile(
                     leading: Icon(Icons.list),
                     title: Text('Basic List'),
@@ -213,7 +210,7 @@ class _MyHomePageState extends State<MyHomePage> {
                       });
                     },
                   ),
-                  
+
                   ListTile(
                     leading: Icon(Icons.list),
                     title: Text('Long List'),
@@ -223,7 +220,7 @@ class _MyHomePageState extends State<MyHomePage> {
                       });
                     },
                   ),
-                  
+
                   ListTile(
                     leading: Icon(Icons.list),
                     title: Text('List spaced'),
@@ -233,7 +230,7 @@ class _MyHomePageState extends State<MyHomePage> {
                       });
                     },
                   ),
-                  
+
                   ListTile(
                     leading: Icon(Icons.list),
                     title: Text('Mixed List'),

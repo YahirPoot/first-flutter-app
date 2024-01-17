@@ -8,20 +8,30 @@ class BasicList extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: const Text('Basic List'),
+        titleTextStyle: TextStyle(
+            fontSize: 30,
+            fontFamily: AutofillHints.birthday,
+            color: Colors.black),
       ),
       body: ListView(
-        children: const <Widget> [
+        children: const <Widget>[
           ListTile(
-            leading:Icon(Icons.map),
-            title:  Text('Map'),
+            leading: Icon(
+              Icons.access_alarm,
+              color: Colors.blue,
+            ),
+            title: Text('Alarm'),
           ),
           ListTile(
-            leading: Icon(Icons.photo_album),
-            title:  Text('Album'),
+            leading: Icon(
+              Icons.account_box_outlined,
+              color: Colors.blue,
+            ),
+            title: Text('Account'),
           ),
           ListTile(
-            leading:Icon(Icons.phone),
-            title:  Text('Phone'),
+            leading: Icon(Icons.photo_album_outlined, color: Colors.blue),
+            title: Text('Photo Album'),
           ),
         ],
       ),

@@ -10,14 +10,10 @@ class HistoryListView extends StatefulWidget {
 }
 
 class _HistoryListViewState extends State<HistoryListView> {
-
   final _key = GlobalKey();
 
-
   static const Gradient _maskingGradient = LinearGradient(
-   
     colors: [Colors.transparent, Colors.black],
-  
     stops: [0.0, 0.5],
     begin: Alignment.topCenter,
     end: Alignment.bottomCenter,
@@ -30,7 +26,6 @@ class _HistoryListViewState extends State<HistoryListView> {
 
     return ShaderMask(
       shaderCallback: (bounds) => _maskingGradient.createShader(bounds),
-     
       blendMode: BlendMode.dstIn,
       child: AnimatedList(
         key: _key,
